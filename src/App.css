@@ -248,7 +248,12 @@ div,body,p{
   justify-content: center;
   margin: 0;
 }
-
+.nav-bar .menu .inner-frame:hover{
+  background: #fff;
+}
+.nav-bar .menu .inner-frame:hover p{
+  color: #000;
+}
 
 .nav-bar .sections{
   display: flex;
