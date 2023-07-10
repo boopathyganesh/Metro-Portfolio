@@ -128,6 +128,7 @@ div,body,p{
   width: 100%;
   max-width: 100%;
 }
+
 .current .inner-frame p{
   color: #FFFFFF;
   font-size: 20px;
@@ -141,6 +142,7 @@ div,body,p{
   justify-content: center;
   margin: 0;
 }
+
 .icon{
   align-items: center;
   display: flex;
@@ -172,6 +174,28 @@ div,body,p{
   height: 25px;
   width: 25px;
   max-width: 100%;
+}
+
+.nav-bar .current .inner-frame:hover{
+  background: #fff;
+}
+.nav-bar .current .inner-frame:hover p{
+  color: #000;
+}
+.nav-bar .current .inner-frame:hover .arrow-icon {
+  background: #000;
+}
+
+.nav-bar .current .inner-frame .arrow-icon .prop {
+  transition: transform 0.3s ease;
+  color: #000;
+  transform: translateX(0);
+}
+
+.nav-bar .current .inner-frame:hover .arrow-icon .prop:first-child,
+.nav-bar .current .inner-frame:hover .arrow-icon .prop:last-child {
+  color: #fff;
+  transform: translateX(25px);
 }
 
 .nav-bar .menu{
@@ -225,6 +249,7 @@ div,body,p{
   margin: 0;
 }
 
+
 .nav-bar .sections{
   display: flex;
   align-items: flex-start;
@@ -275,6 +300,12 @@ div,body,p{
   max-width: 100%;
   justify-content: center;
   margin: 0;
+}
+.sections .portfolio:hover{
+  background: #FFFFFF;
+}
+.sections .portfolio:hover p{
+  color: #000;
 }
 .sections .portfolio .tab{
   display: flex;
@@ -335,6 +366,12 @@ div,body,p{
   justify-content: center;
   margin: 0;
 }
+.sections .category:hover{
+  background: #FFFFFF;
+}
+.sections .category:hover p{
+  color: #000;
+}
 .sections .category .tab{
   display: flex;
   align-items: center;
@@ -392,6 +429,12 @@ div,body,p{
 .social-icons .icons .props{
   color: #FFFFFF;
   font-size: 16px;
+}
+.social-icons .icons:hover{
+  background: #fff;
+}
+.social-icons .icons:hover .props{
+  color: #000;
 }
 
 
@@ -544,6 +587,41 @@ div,body,p{
   width: 25px;
   max-width: 100%;
 }
+.role .inner-area .general:hover{
+  background: #fff;
+}
+.role .inner-area .general:hover p{
+  color: #839292;
+}
+.role .inner-area .general:hover .arrow-icon {
+  background: #839292;
+}
+
+.role .inner-area .general:hover .arrow-icon .props {
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+.role .inner-area .general:hover .arrow-icon .props:first-child {
+  transform: translateX(25px);
+}
+
+.role .inner-area .general:hover .arrow-icon .props:last-child {
+  transform: translateX(25px);
+}
+
+.role .inner-area .general .arrow-icon .props {
+  transition: transform 0.3s ease;
+}
+
+.role .inner-area .general .arrow-icon .props:first-child {
+  transform: translateX(0);
+}
+
+.role .inner-area .general .arrow-icon .props:last-child {
+  transform: translateX(0);
+}
+
 
 .role .inner-area .specific{
     display: flex;
@@ -640,7 +718,12 @@ div,body,p{
   max-width: 100%;
   justify-content: center;
 }
-
+.auth-profile .donation-btn:hover{
+  background: #fff;
+}
+.auth-profile .donation-btn:hover p{
+  color: #839292;
+}
 .main .description-section{
   display: flex;
   align-items: flex-start;
@@ -942,6 +1025,7 @@ div,body,p{
   max-width: 100%;
 }
 .latest-post .description p{
+  color: rgba(255, 255, 255, 0.7);
   display: block;
   margin: 0;
   min-height: 1em;
@@ -951,6 +1035,25 @@ div,body,p{
   font-weight: 700;
 }
 
+.latest-post:hover .img-holder {
+  transform: scale(1.1);
+}
+
+.latest-post:hover .arrow-icon {
+  background: #fff;
+}
+
+.latest-post .arrow-icon .props {
+  transition: transform 0.3s ease;
+}
+
+.latest-post:hover .arrow-icon .props:first-child {
+  transform: translateX(25px);
+}
+
+.latest-post:hover .arrow-icon .props:last-child {
+  transform: translateX(25px);
+}
 
 .contents .posts .favorite-post{
   display: flex;
@@ -1093,7 +1196,23 @@ div,body,p{
   justify-content: flex-end;
   margin: 0;
 }
+.favorite-post:hover .header .tab{
+  background: #000;
+}
+.favorite-post:hover .header .tab p{
+  color: #dfb921;
+}
+.favorite-post .arrow-icon .props {
+  transition: transform 0.3s ease;
+}
 
+.favorite-post:hover .arrow-icon .props:first-child {
+  transform: translateX(25px);
+}
+
+.favorite-post:hover .arrow-icon .props:last-child {
+  transform: translateX(25px);
+}
 .contents .posts .statistics{
   display: flex;
   align-items: center;
@@ -1277,7 +1396,23 @@ div,body,p{
   width: 100%;
   max-width: 100%;
 }
+.statistics:hover .header .tab{
+  background: #000;
+}
+.statistics:hover .header .tab p{
+  color: #9a82c2;
+}
+.statistics .arrow-icon .props {
+  transition: transform 0.3s ease;
+}
 
+.statistics:hover .arrow-icon .props:first-child {
+  transform: translateX(25px);
+}
+
+.statistics:hover .arrow-icon .props:last-child {
+  transform: translateX(25px);
+}
 
 /* FOOTER */
 .contents .footer{
