@@ -3,7 +3,7 @@
 *{
   font-family: 'Inter', sans-serif;
 }
-body{
+html,body{
   background: #000000;
   transition: background 0.5s cubic-bezier(0.4, 0.4, 0, 1);
 }
@@ -26,6 +26,7 @@ div,body,p{
   display: flex;
   height: auto;
   min-height: 100vh;
+  background: #000000;
 }
 
 .wrapper{
@@ -423,7 +424,7 @@ div,body,p{
   width: 100%;
   max-width: 100%;
 }
-.main .details{
+.main {
   display: flex;
   align-items: flex-start;
   background: rgba(0,0,0,0.0);
@@ -438,7 +439,7 @@ div,body,p{
   width: 100%;
   max-width: 100%;
 }
-.main .details .auth-details{
+.main  .auth-details{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -570,7 +571,7 @@ div,body,p{
   margin: 0;
 }
 
-.main .details .auth-profile{
+.main  .auth-profile{
   display: flex;
   align-items: flex-end;
   background: rgba(0,0,0,0.0);
@@ -584,7 +585,7 @@ div,body,p{
   width: auto;
   max-width: 100%;
 }
-.details .auth-profile .profile-img{
+ .auth-profile .profile-img{
   border-radius: 50%;
   flex: none;
   height: 130px;
@@ -592,7 +593,7 @@ div,body,p{
   width: 130px;
   max-width: 100%;
 }
-.details .auth-profile .profile-img::before{
+ .auth-profile .profile-img::before{
   background-image: url(assets/profile.png  );
 }
 .image{
@@ -612,7 +613,7 @@ div,body,p{
   width: 100%;
   z-index: 0;
 }
-.details .auth-profile .donation-btn{
+ .auth-profile .donation-btn{
   display: flex;
   align-items: center;
   background: rgba(255, 255, 255, 0.15);
@@ -627,7 +628,7 @@ div,body,p{
   width: auto;
   max-width: 100%;
 }
-.details .auth-profile .donation-btn p{
+ .auth-profile .donation-btn p{
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 500;
@@ -1432,4 +1433,248 @@ div,body,p{
   width: auto;
   max-width: 100%;
   justify-content: center;
+}
+
+@media screen and (max-width: 1140px) {
+  .wrapper .contents{
+    flex: none;
+  }
+  .footer{
+    margin: 30px 0px 50px 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .top-frame .header .nav-bar{
+    flex: 1;
+    margin: 0px 6px 0px 0px;
+    width: auto;
+    max-width: calc(100% - 6px);
+    height: 100%;
+  }
+  .nav-bar .menu{
+    display: none;
+  }
+  .nav-bar .current .inner-frame p{
+    font-size: 18px;
+  }
+  .nav-bar .menu .inner-frame p{
+    font-size: 18px;
+  }
+  .auth-card .auth-details .auth-name h1{
+    font-size: 80px;
+  }
+  .auth-card .auth-details .role .inner-area .general p{
+    font-size: 18px;
+  }
+  .main .description-section .tabs .tab p{
+    font-size: 18px;
+  }
+  .main .description-section .description p{
+    font-size: 22px;
+  }
+  .posts .favorite-post .data p{
+    font-size: 20px;
+    margin: 0px 5px 0px 0px;
+    width: calc(50% - 5px);
+    max-width: calc(50% - 5px);
+  }
+  .posts .favorite-post .data .value{
+    margin: 0px 0px 0px 5px;
+    width: calc(50% - 5px);
+    max-width: calc(50% - 5px);
+  }
+  .posts .favorite-post .data .value p{
+    font-size: 45px;
+  }
+  .posts .statistics .data p{
+    font-size: 20px;
+  }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 840px) {
+  .top-frame .header .social-icons{
+    display: none;
+  }
+  .nav-bar .current{
+    flex: 1;
+    width: auto;
+    max-width: calc(100% - 6px);
+    height: 100%;
+  }
+  .nav-bar .menu{
+    display: flex;
+  }
+  .nav-bar .sections{
+    display: none;
+  }
+  .top-frame .main .auth-card {
+    align-items: flex-start;
+    flex: none;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .auth-card  .auth-details{
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .auth-card .auth-details .auth-name h1{
+    font-size: 70px;
+  }
+  .auth-card .auth-details .role{
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .auth-card .auth-details .role .inner-area{
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+  }
+  .auth-card .auth-details .role .inner-area .general{
+    width: 100%;
+    max-width: 100%;
+  }
+  .auth-card .auth-details .role .inner-area .specific{
+    margin: 20px 0px 0px 0px;
+    max-width: 100%;
+  }
+  .main .description-section{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .main .description-section .tabs{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .main .description-section .description{
+    margin: 30px 0px 0px 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+
+
+
+  .footer .sections{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .footer .sections .left-section{
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer .sections .right-section{
+    flex: none;
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer .sections .right-section .links{
+    display: none;
+  }
+  .contents .top-frame .posts{
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .posts .latest-post{
+    flex: none;
+    width: calc(60% - 10px);
+    max-width: calc(60% - 10px);
+  }
+  .posts .latest-post .title p{
+    font-size: 20px;
+  }
+  .posts .favorite-post{
+    flex: none;
+    width: calc(60% - 10px);
+    max-width: calc(60% - 10px);
+  }
+  .posts .statistics{
+    flex: none;
+    width: calc(60% - 10px);
+    max-width: calc(60% - 10px);
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 540px) {
+  .wrapper{
+    padding: 14px;
+  }
+  .top-frame .header .social-icons{
+    display: none;
+  }
+  .nav-bar .menu{
+    display: flex;
+  }
+  .nav-bar .menu .inner-frame{
+    padding: 0px 15px 0px;
+  }
+  .nav-bar .sections{
+    display: none;
+  }
+  .auth-card .auth-details .auth-name h1{
+    font-size: 40px;
+  }
+  .main .description-section .description p{
+    font-size: 22px;
+  }
+  .contents .posts{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .contents .posts .latest-post{
+    width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+  .contents .posts .latest-post .post-img .img-holder{
+    height: 180px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .contents .posts .favorite-post{
+    transition-delay: 0ms;
+    width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+  .contents .posts .statistics{
+    transition-delay: 0ms;
+    width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+
+
+
+
+
+
+  .footer{
+    transition-delay: 0ms;
+  }
 }
